@@ -1,5 +1,6 @@
-import { motion } from 'framer-motion';
-
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTelegram } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <motion.footer
@@ -11,7 +12,9 @@ function Footer() {
       className="py-8 bg-gray-800 text-center"
     >
       <div className="container mx-auto px-4">
-        <h3 className="text-2xl font-bebas text-red-500 mb-4">Join the KIDDO Rebellion</h3>
+        <h3 className="text-2xl font-bebas text-red-500 mb-4">
+          Join the KIDDO Rebellion
+        </h3>
         <div className="flex justify-center space-x-6 mb-4">
           <a
             href="https://x.com"
@@ -27,13 +30,19 @@ function Footer() {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
           >
+            <FontAwesomeIcon icon={faTelegram} className="mr-1" />
             Telegram
           </a>
-          <a href="#" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
+          >
             Discord
           </a>
         </div>
-        <p className="text-gray-400">© 2025 KIDDO Memecoin. All rights reserved.</p>
+        <p className="text-gray-400">
+          © 2025 KIDDO Memecoin. All rights reserved.
+        </p>
       </div>
     </motion.footer>
   );

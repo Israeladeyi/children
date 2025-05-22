@@ -111,7 +111,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"
         >
-          Break the rules, join the revolution. KIDDO is the memecoin for the bold and the fearless.
+        Tantrum on the blockchain . No rules , Just Pure-Chain Chaos, Minted by Misfits , Fueled by Memes 🎯
         </motion.p>
         {timeLeft.launched ? (
           <motion.h3
@@ -132,19 +132,19 @@ function Hero() {
           >
             <div className="bg-gray-800 p-4 rounded-lg">
               <span className="text-3xl md:text-5xl font-bold text-purple-400">{timeLeft.days}</span>
-              <p className="text-sm">Days</p>
+              <p className="text-sm text-white">Days</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
               <span className="text-3xl md:text-5xl font-bold text-purple-400">{timeLeft.hours}</span>
-              <p className="text-sm">Hours</p>
+              <p className="text-sm text-white">Hours</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
               <span className="text-3xl md:text-5xl font-bold text-purple-400">{timeLeft.minutes}</span>
-              <p className="text-sm">Minutes</p>
+              <p className="text-sm text-white">Minutes</p>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
               <span className="text-3xl md:text-5xl font-bold text-purple-400">{timeLeft.seconds}</span>
-              <p className="text-sm">Seconds</p>
+              <p className="text-sm text-white">Seconds</p>
             </div>
           </motion.div>
         )}

@@ -89,7 +89,7 @@ const Header = () => {
               ))}
               <li>
                 <a
-                  href="https://x.com"
+                  href="https://x.com/kiddocoin_sol"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple-400"

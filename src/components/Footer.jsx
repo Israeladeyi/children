@@ -33,12 +33,6 @@ function Footer() {
             <FontAwesomeIcon icon={faTelegram} className="mr-1" />
             Telegram
           </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
-          >
-            Discord
-          </a>
         </div>
         <p className="text-gray-400">
           © 2025 KIDDO Memecoin. All rights reserved.

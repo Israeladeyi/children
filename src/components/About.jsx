@@ -80,7 +80,10 @@ function About() {
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bebas text-red-500 mb-4">Why KIDDO?</h3>
               <p className="text-gray-300">
-               We are the youth who never got our turn on the swings. The world tried to tame us with rules, but we were never meant to be contained.
+                We’re the kids who never got our turn on the swings.
+                Told to sit still, follow rules — but we were never built for cages.
+                KIDDO is our rebellion.
+                Fueled by memes, chaos, and crypto, we mint our own path — loud, wild, and decentralized
               </p>
             </div>
           </motion.div>
@@ -100,7 +103,10 @@ function About() {
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bebas text-red-500 mb-4">Our Vision</h3>
               <p className="text-gray-300">
-Now, we mint our own rules. No more nap times. No more timeouts. Just unfiltered, unstoppable play — powered by Web3. </p>
+                No more nap times. No more timeouts.
+                We’re building a playground on the blockchain — ruled by us, powered by Web3.
+                A memecoin, yes — but also a movement.
+                Unfiltered. Unstoppable. Undeniably KIDDO </p>
 
             </div>
           </motion.div>

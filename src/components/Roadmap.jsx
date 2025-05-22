@@ -26,42 +26,40 @@ function Roadmap() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bebas text-center text-purple-400 mb-8"
         >
-          Roadmap
+          Tokenomics
         </motion.h2>
-        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="space-y-8">
-          <motion.div
-            variants={cardVariants}
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center p-6 bg-gray-800 rounded-lg shadow-lg"
-          >
-            <div className="text-red-500 text-2xl font-bold mr-4">Q2 2025</div>
-            <div>
-              <h3 className="text-xl font-bebas text-purple-400">Token Launch</h3>
-              <p className="text-gray-300">Official launch of $KIDDO on major DEXs with initial liquidity pools.</p>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={cardVariants}
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center p-6 bg-gray-800 rounded-lg shadow-lg"
-          >
-            <div className="text-red-500 text-2xl font-bold mr-4">Q3 2025</div>
-            <div>
-              <h3 className="text-xl font-bebas text-purple-400">Community Expansion</h3>
-              <p className="text-gray-300">Partnerships with NFT projects and community-driven campaigns.</p>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={cardVariants}
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center p-6 bg-gray-800 rounded-lg shadow-lg"
-          >
-            <div className="text-red-500 text-2xl font-bold mr-4">Q4 2025</div>
-            <div>
-              <h3 className="text-xl font-bebas text-purple-400">Ecosystem Growth</h3>
-              <p className="text- gray-300">Launch of KIDDO staking and governance features.</p>
-            </div>
-          </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row gap-6"
+        >
+          {[
+            {
+              title: 'Token Name',
+              text: 'KIDDO',
+            },
+            {
+              title: 'Ticker',
+              text: '$KIDDO',
+            },
+            {
+              title: 'Taxes',
+              text: '0% Buy/Sell',
+            },
+          ].map((item, idx) => (
+            <motion.div
+              key={idx}
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              className="flex-1 p-6 bg-gray-800 rounded-lg shadow-lg"
+            >
+              <h3 className="text-xl font-bebas text-purple-400 text-center">{item.title}</h3>
+              <p className="text-gray-300 text-center">{item.text}</p>
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

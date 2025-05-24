@@ -22,7 +22,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
-          {["Home", "About", "Roadmap"].map((item) => (
+          {["Home", "About", "Tokenomics"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}

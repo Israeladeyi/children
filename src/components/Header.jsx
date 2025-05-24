@@ -76,7 +76,7 @@ const Header = () => {
             className="md:hidden bg-gray-800/95 px-4 pb-4 overflow-hidden"
           >
             <ul className="flex flex-col space-y-4 text-white py-4">
-              {["Home", "About", "Roadmap"].map((item) => (
+              {["Home", "About", "Tokenomics"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}

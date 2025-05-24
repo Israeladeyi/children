@@ -1,52 +1,6 @@
-{/*import { motion } from "framer-motion";
-import heroImg from "../assets/heroImg.jpg"; // Replace with your actual image path
-const Hero = () => {
-    return (
-        <section className="pt-24 pb-16 px-6 md:px-16 bg-gradient-to-b from-purple-100 to-white">
-            <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-               
-                <motion.div
-                    initial={{ x: -60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1 }}
-                    className="flex-1 text-center md:text-left"
-                >
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-purple-700 leading-tight">
-                       <span className="text-purple-500">$KIDDO</span> <br />
-                      isn’t just a coin.
-                    </h1>
-                    <p className="text-lg md:text-xl text-gray-700 mt-6 max-w-lg">
-                    It’s the tantrum of a generation the digitally grown, meme-fed, authority-questioning crypto
- youth who never got their turn on the swings. <br />
- The world tried to tame us with rules. <br />
- Now we mint our own. <br />
- No more nap times. <br />
- No more timeouts. <br />
- Just unfiltered play, powered by Web3.
-                    </p>
-                  
-                </motion.div>
-            
-                <motion.div
-                    initial={{ x: 60, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 1 }}
-                    className="flex-1"
-                >
-                    <img
-                        src={heroImg}
-                        alt="Kiddo Hero"
-                        className="w-full max-w-[500px] sm:max-w-[550px] md:max-w-[600px] lg:max-w-[700px] mx-auto drop-shadow-2xl transition-transform duration-300 hover:scale-105 rounded-2xl"
-                    />
-                </motion.div>
-            </div>
-        </section>
-    );
-};
-export default Hero;*/}
-
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import heroImg from "../assets/$KIDDO $KIDDO.png";
 
 function Hero() {
   const [timeLeft, setTimeLeft] = useState({
@@ -87,16 +41,19 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="relative w-full min-h-screen flex items-center justify-center bg-no-repeat bg-center bg-contain"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
+        backgroundImage: `url(${heroImg})`,
       }}
     >
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-black/40 z-0" />
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="container mx-auto px-4 text-center bg-gray-900/50 py-12 rounded-lg"
+        className="container mx-auto px-4 text-center bg-gray-900/50 py-12 rounded-lg relative z-10"
       >
         <motion.h1
           animate={{ scale: [1, 1.05, 1] }}
@@ -111,8 +68,9 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"
         >
-        Tantrum on the blockchain . No rules , Just Pure-Chain Chaos, Minted by Misfits , Fueled by Memes 🎯
+          Tantrum on the blockchain. No rules, just Pure-Chain Chaos. Minted by Misfits, Fueled by Memes 🎯
         </motion.p>
+
         {timeLeft.launched ? (
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
@@ -148,6 +106,7 @@ function Hero() {
             </div>
           </motion.div>
         )}
+
         <motion.a
           href="#about"
           initial={{ opacity: 0, y: 20 }}

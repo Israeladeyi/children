@@ -59,7 +59,7 @@ function About() {
             whileHover={{ scale: 1.05 }}
             className="flex flex-col md:flex-row-reverse items-center bg-gray-700 rounded-lg shadow-lg p-6"
           >
-            <div className="md:w-1/2 mb-4 md:mb-0 md:pl-6">
+            <div className="md:w-1/2 mb-4 md:mb-0 md:pr-6">
               <img
                 src={img2}
                 alt="Punk rebellion"

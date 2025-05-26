@@ -100,7 +100,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="https://telegram.org"
+                  href="https://t.me/+qNkXW0z_cUYyZTNk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple-400"

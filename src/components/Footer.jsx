@@ -17,7 +17,7 @@ function Footer() {
         </h3>
         <div className="flex justify-center space-x-6 mb-4">
           <a
-            href="https://x.com"
+            href="https://x.com/kiddocoin_sol"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
@@ -25,7 +25,7 @@ function Footer() {
             X
           </a>
           <a
-            href="https://telegram.org"
+            href="https://t.me/+qNkXW0z_cUYyZTNk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition-colors duration-300"
